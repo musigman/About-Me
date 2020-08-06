@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // var userName = prompt('Hello! What is your name?');
 // alert('Welcome to my page ' + userName);
@@ -42,6 +42,57 @@
 // } else {
 //   alert('Get out of here!!');
 // }
+
+
+
+
+
+
+// var favNumber = 3;
+// var count = 0;
+// while (count < 4) {
+//   var userGuess = prompt('Can you guess my favorite number?');
+//   console.log('Guessed favorite number: ' + userGuess);
+//   if (parseInt(userGuess) === favNumber) {
+//     alert('Congratulations!! You guessed my favorite number!')
+//     break;
+//   }
+//   else if (parseInt(userGuess) > favNumber) {
+//     count++;
+//     alert('Whoa your a little big there! Try a smaller number')
+//   } else if (parseInt(userGuess) < favNumber) {
+//     count++;
+//     alert('Hey smalls! Try a bigger number!')
+//   }
+// }
+
+var pizzaToppings = ['cheese', 'pineapple', 'pepperoni', 'olives', 'tomatoes', 'sausage', 'peppers'];
+var count = 0;
+while (count < 6) {
+  var userToppings = prompt('Can you guess what one of my favorite pizza toppings is?');
+  console.log('Guessed pizza topping: ' + userToppings);
+  for (var i = 0; i < pizzaToppings.length; i++) {
+    if (userToppings.toLowerCase() === pizzaToppings[i]) {
+      alert('Yes! That is one of my favoite toppings')
+      count = 7;
+      break;
+    } else {
+      count++;
+      alert('No, sorry, ' + userToppings + 'isn\'t one of my favoite toppings. Try again.');
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 // alert('Once again...Welcome to my page ' + userName + '. I hope you can learn more about me here!');
 
